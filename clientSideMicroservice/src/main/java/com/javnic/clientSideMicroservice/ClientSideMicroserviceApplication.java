@@ -19,6 +19,9 @@ public class ClientSideMicroserviceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Grpc client response : " + stockClientService.getStockPrice("GOOGLE"));
+//		System.out.println("Grpc client response : " + stockClientService.getStockPrice("GOOGLE"));
+//		stockClientService.subscribeStockPrice("GOOGLE");
+//		stockClientService.placeBulkOrders();
+		stockClientService.startTrading();
 	}
 }
